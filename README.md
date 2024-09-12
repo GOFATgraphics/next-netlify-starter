@@ -1,63 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOFAT COUTURE - Clothing Samples</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-blue-500 text-white text-center py-6">
+    <h1 class="text-4xl font-bold">GOFAT COUTURE</h1>
+    <p class="mt-2">Elegant and Custom Tailoring Services</p>
+    <!-- Navigation -->
+    <nav class="mt-4">
+      <a href="index.html" class="text-white mx-4">Home</a>
+      <a href="samples.html" class="text-white mx-4">Clothing Samples</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto mt-8">
+    <h2 class="text-3xl font-bold text-center mb-6">Clothing Samples</h2>
+
+    <!-- Sample Clothing Gallery -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Sample Item 1 -->
+      <div class="bg-white p-4 rounded shadow-md">
+        <img src="https://source.unsplash.com/400x400?clothes,formal" alt="Sample Outfit 1" class="w-full rounded mb-4">
+        <h3 class="text-lg font-bold mb-2">Classic Suit</h3>
+        <p>A tailored classic suit perfect for formal events.</p>
+      </div>
+
+      <!-- Sample Item 2 -->
+      <div class="bg-white p-4 rounded shadow-md">
+        <img src="https://source.unsplash.com/400x400?clothes,dress" alt="Sample Outfit 2" class="w-full rounded mb-4">
+        <h3 class="text-lg font-bold mb-2">Elegant Dress</h3>
+        <p>An elegant dress for special occasions, tailored to perfection.</p>
+      </div>
+
+      <!-- Sample Item 3 -->
+      <div class="bg-white p-4 rounded shadow-md">
+        <img src="https://source.unsplash.com/400x400?clothes,casual" alt="Sample Outfit 3" class="w-full rounded mb-4">
+        <h3 class="text-lg font-bold mb-2">Casual Attire</h3>
+        <p>Comfortable yet stylish casual wear.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-8 text-gray-500">
+    <p>&copy; 2024 GOFAT COUTURE. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
 # Next + Netlify Starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOFAT COUTURE</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
 
-This is a [Next.js](https://nextjs.org/) v14 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
+  <!-- Header Section -->
+  <header class="bg-blue-500 text-white text-center py-6">
+    <h1 class="text-4xl font-bold">GOFAT COUTURE</h1>
+    <p class="mt-2">Elegant and Custom Tailoring Services</p>
+    <!-- Navigation -->
+    <nav class="mt-4">
+      <a href="index.html" class="text-white mx-4">Home</a>
+      <a href="samples.html" class="text-white mx-4">Clothing Samples</a>
+    </nav>
+  </header>
 
-This project is a very minimal starter that includes 2 sample components, a global stylesheet, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases. With Netlify, you'll have access to features like Preview Mode, server-side rendering/incremental static regeneration via Netlify Functions, and internationalized routing on deploy automatically.
+  <!-- Main Content -->
+  <main class="container mx-auto mt-8">
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+    <!-- Profile Section -->
+    <section class="bg-white p-6 rounded shadow-md mb-8">
+      <h2 class="text-2xl font-bold mb-4">About GOFAT COUTURE</h2>
+      <p>Welcome to GOFAT COUTURE! We specialize in creating tailor-made, custom-fitted clothing for individuals who appreciate the art of fine tailoring. Our years of experience in the fashion industry have allowed us to deliver premium quality suits, dresses, and more, all crafted to your unique measurements.</p>
+    </section>
 
-(If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify)
+    <!-- Measurement Form Section -->
+    <section class="text-center">
+      <h2 class="text-2xl font-bold mb-4">Take Your Measurements</h2>
+      <p class="mb-6">Fill out the form below with your body measurements for your custom tailored outfit.</p>
 
-## Table of Contents:
+      <!-- Measurement Form -->
+      <form id="measurement-form" class="bg-white p-6 rounded shadow-md mx-auto max-w-lg">
+        <!-- Name -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="name">Full Name</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="text" id="name" name="name" required>
+        </div>
 
-- [Getting Started](#getting-started)
-- [Installation options](#installation-options)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
+        <!-- Email -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="email">Email</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="email" id="email" name="email" required>
+        </div>
 
-## Getting Started
+        <!-- Shoulder -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="shoulder">Shoulder (cm)</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="number" id="shoulder" name="shoulder" required>
+        </div>
 
-First, run the development server:
+        <!-- Sleeve Length -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="sleeve">Sleeve Length (cm)</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="number" id="sleeve" name="sleeve" required>
+        </div>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+        <!-- Top Length -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="top-length">Top Length (cm)</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="number" id="top-length" name="top-length" required>
+        </div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+        <!-- Trouser Length -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="trouser">Trouser Length (cm)</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="number" id="trouser" name="trouser" required>
+        </div>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+        <!-- Neck Size -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="neck">Neck (cm)</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="number" id="neck" name="neck" required>
+        </div>
 
-### Installation options
+        <!-- Chest Size -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="chest">Chest (cm)</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="number" id="chest" name="chest" required>
+        </div>
 
-**Option one:** One-click deploy
+        <!-- Thigh Size -->
+        <div class="mb-4">
+          <label class="block text-gray-700" for="thigh">Thigh (cm)</label>
+          <input class="w-full p-2 border border-gray-300 rounded" type="number" id="thigh" name="thigh" required>
+        </div>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+        <!-- Submit Button -->
+        <div class="mt-6">
+          <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Submit Measurements</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
-**Option two:** Manual clone
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-8 text-gray-500">
+    <p>&copy; 2024 GOFAT COUTURE. All rights reserved.</p>
+  </footer>
 
-1. Clone this repo: `git clone https://github.com/netlify-templates/next-netlify-starter.git`
-2. Navigate to the directory and run `npm install`
-3. Run `npm run dev`
-4. Make your changes
-5. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
-
-## Testing
-
-### Included Default Testing
-
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
-
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
-
-If your team is not interested in this tooling, you can remove them with ease!
-
-### Removing Renovate
-
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
+  <script>
+    document.getElementById('measurement-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Measurements submitted successfully!');
+    });
+  </script>
+</body>
+</html>
+[
